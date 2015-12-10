@@ -1,0 +1,40 @@
+<md-toolbar class="md-primary md-default-theme">
+    <div class="md-toolbar-tools">
+        <md-icon md-svg-src="icons/twitterLogo.svg"></md-icon>
+        <h2 class="md-flex" style="padding-right: 90%">Tweets</h2>
+    </div>
+</md-toolbar>
+<md-content class="ng-cloak md-padding">
+    <md-list>
+        <md-list-item class="md-3-line" ng-repeat="item in tweets.statuses">
+            <img ng-src="{{item.user.profile_image_url}}" class="face customPadding" align="left" />
+            <span class="customGrid">{{ item.user.name }}</span>
+            <span class="customGrid userText"> @{{item.user.screen_name}}</span>
+                <div>{{ item.text }}</div>
+
+                 <span ng-if="item.entities.hashtags.length>0" ng-repeat="tag in item.entities.hashtags">
+                 <span class="customColor">#{{ tag.text }}</span>
+                 </span>
+                <div ng-if="item.entities.urls.length>0">
+                 <span ng-repeat="url in item.entities.urls">
+                     <span class="customPadding2 customColor">{{ url.display_url }}</span>
+                 </span>
+                 </div>
+                <div ng-if="item.entities.media.length>0">
+                 <div  ng-repeat="media in item.entities.media">
+                     <img class="InAllPadding" ng-src="{{media.media_url}}"/>
+                 </div>
+                </div>
+            <md-divider></md-divider>
+        </md-list-item>
+    </md-list>
+    <div class="imgPadding">
+    <md-button class="md-raised md-warn" ng-click="TwitterSignOut()"> <md-icon md-svg-src="icons/logOut.svg"></md-icon>
+        Log Out</md-button>
+    </div>
+</md-content>
+
+
+
+
+

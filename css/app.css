@@ -1,0 +1,53 @@
+.customToolBar{
+    padding-right: 25% !important;
+}
+
+.customPadding{
+    padding-right: 10px;
+}
+
+.InAllPadding{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+
+.customGrid{
+    font-weight: 600;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.userText{
+    color: lightgray;
+    font-weight: 400 !important;
+}
+
+.customColor{
+    color:green;
+    font-size:15px;
+}
+
+.TwLoginBtn{
+    background-color: #4099FF !importanti;
+}
+
+.customPadding2{
+    padding-left: 5%;
+}
+
+.imgSize{
+    width: 100%;
+
+}
+
+.imgPadding{
+    padding-top: 2%;
+}
+
+.loginBtn{
+    background-color: #1dcaff !important;
+    width: 100%;
+    color: white!important;
+}

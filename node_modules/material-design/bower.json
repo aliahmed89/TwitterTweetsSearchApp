@@ -1,0 +1,29 @@
+{
+  "name": "material-design",
+  "version": "0.0.1-alpha",
+  "homepage": "https://github.com/janbiasi/material-design",
+  "authors": [
+    "Jan Biasi <jan.biasi@namics.com>"
+  ],
+  "description": "Materialdesign implementation with Less",
+  "main": "dist/material-design.css",
+  "keywords": [
+    "material",
+    "design",
+    "google",
+    "material",
+    "less",
+    "ui"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src/*",
+    "arch/*"
+  ]
+}

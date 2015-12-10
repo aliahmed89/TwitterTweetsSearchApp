@@ -1,0 +1,22 @@
+<md-toolbar class="md-primary md-default-theme">
+    <div class="md-toolbar-tools">
+        <md-icon md-svg-src="icons/twitterLogo.svg"></md-icon>
+        <h2 class="md-flex" style="padding-right: 83%">Twitter Search App</h2>
+    </div>
+
+</md-toolbar>
+
+<md-content class="md-padding">
+        <h3 class="md-display-2">Type a word to search related Tweets:</h3>
+        <md-input-container flex>
+            <label>Type text here</label>
+            <input ng-model="query">
+        </md-input-container>
+        <md-button class="md-fab md-primary" aria-label="Search" ng-click="SearchTweets(query);">
+            <md-icon md-svg-src="icons/search.svg"></md-icon>
+        </md-button>
+        <div layout="row" layout-sm="column" layout-align="space-around">
+            <md-progress-circular md-mode="indeterminate" ng-show="isLoading"></md-progress-circular>
+        </div>
+
+</md-content>
